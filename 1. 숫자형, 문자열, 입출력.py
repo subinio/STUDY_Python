@@ -21,6 +21,7 @@ print(b)
 
 
 
+
 ## Can you change it so it can read and sum three number?
 
 a = int(input())
@@ -31,11 +32,13 @@ print(a + b + c)
 
 
 
+
 ## Write a program that greets the user by printing the word “Hello”, a comma, the name of the user and an exclamation make after it.
 
 a = input()
 
 print("Hello, "+a+"!")
+
 
 
 
@@ -50,4 +53,19 @@ k = int(input())
 
 print(k // n)
 print(k % n)
+
+
+
+
+
+## Given the integer N - the number of seconds that is passed since midnight - how many full hours and full minutes are passed since midnight?
+
+second = int(input())
+
+print(second//(60*60), second//60)
+
+
+
+
+##s
 
