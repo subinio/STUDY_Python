@@ -67,5 +67,22 @@ print(second//(60*60), second//60)
 
 
 
-##s
+## Given two timestamps of the same day: a number of hours, minutes and seconds for both of the timestamps.
+## The moment of the first timestamp happened before the moment of the second one. Calculate how many seconds passed between them.
+
+hour1 = int(input())
+min1 = int(input())
+sec1 = int(input())
+
+hour2 = int(input())
+min2 = int(input())
+sec2 = int(input())
+
+second1 = hour1*(60*60)+ min1*60 + sec1 
+
+second2 = hour2*(60*60)+ min2*60 + sec2 
+
+print(second2-second1)
+
+
 
