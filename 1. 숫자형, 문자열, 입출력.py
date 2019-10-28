@@ -99,7 +99,24 @@ print(n//10, n%10)
 
 
 
+## Given a two-digit integer, swap its digits and print the result.
+
+n = int(input())
+
+print( (n%10)*10 + (n//10))
+
+
+
+
+
+## Given and integer greater than 9, print its last two digit.
+
+a = int(input())
+
+print(a%100)
+
+
+
+
+
 ## 
-
-
-
