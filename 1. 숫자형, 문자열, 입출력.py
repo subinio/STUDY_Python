@@ -129,3 +129,53 @@ print((a//10) %10)
 
 
 
+## Given a three-digit number. Find the sum of its digits.
+
+a = int(input())
+
+sum = 0
+
+sum += a/10
+a = a%10
+
+sum += a/10
+a = a%10
+
+sum += a/10
+
+print(sum)
+
+
+
+
+
+## Given a positive real number, print its first digit to the right of the decimal point.
+
+a = float(input())
+
+print(int((a*10)%10))
+
+
+
+
+
+## A car can cover distance of N kilometers per day.
+## How many days will it take to cover a route of length M kilometers?
+## The program gets two numbers? The program gets two numbers: N and M.
+
+N = int(input())
+M = int(input())
+
+print((M+(N-1))//N)
+
+
+
+
+
+## Given a year (as a positive integer), find the respective number of the century.
+## Note that, for example, 20th century began with the year 1901.
+
+a = int(input())
+
+print(((a-1)//100)+1)
+
