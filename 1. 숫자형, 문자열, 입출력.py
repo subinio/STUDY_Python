@@ -179,3 +179,73 @@ a = int(input())
 
 print(((a-1)//100)+1)
 
+
+
+
+
+## A cupcake costs A dollars and B cents.
+## Determine, how many dollars and cents should one pay for N cupcakes.
+## A program gets three numbers. A, B, N.
+## It should print two numbers: total cost in dollars and cents.
+
+A = int(input())
+B = int(input())
+N = int(input())
+
+dollars = A*N + (B*N)//100
+cents = (B*N)%100
+
+print(dollars, cents)
+
+
+
+
+
+## Days of week are numbered as: 
+## 0 : Sunday,    1 : Monday,    2 : Tuesday, … 6 : Saturday.
+## An integer K in the range 1 to 365 is given.
+## Find the number of day of week for K-th day of year provided that in this year January 1 was Thursday. 
+
+K = int(input())
+
+print((K%7+3)%7)
+
+
+
+
+
+## Given the integer N - the number of minutes that is passed since midnight - how many hours and minutes are displayed on the 24h digital clock?
+## For example, if N = 150, then 150 minutes have passed since midnight - i.e. now is 2:30 am. So the program should print 2 30.
+
+a = int(input())
+
+hour = a//60
+min = a%60
+
+print(hour, min)
+
+
+
+
+
+## A school decided to replace the desks in three classrooms.
+## Each desk sits two students.
+## Given the number of students in each class, print the smallest possible number of desks that can be purchased.
+
+## The program should read three integers: the number of students in each of the three classes, a, b and c respectively.
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+a_need = (a+1)//2
+b_need = (b+1)//2
+c_need = (c+1)//2
+
+print(a_need+b_need+c_need)
+
+
+
+
+
+## 
