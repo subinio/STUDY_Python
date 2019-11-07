@@ -264,15 +264,15 @@ print(sum, mul, div)
 
 ## 두 변수 a,b 에 자연수를 입력 받고 두 변수 값을 Swap(교환) 하는 프로그램을 작성하라.
 
-a = int (input(“a =”))
-b = int (input(“b =”))
+a = int (input("a ="))
+b = int (input("b ="))
 
 tmp = b
 a = n2
 b = tmp
 
-print(“a =“, a)
-print(“b =“, b)
+print("a =", a)
+print("b =", b)
 
 
 
@@ -282,17 +282,17 @@ print(“b =“, b)
 ## (단 a->b, b->c, c->a 으로 치환하라.)
 
 
-a = int (input(“a = ”))
-b = int (input(“b = ”))
-c = int (input(“c = ”))
+a = int (input("a = "))
+b = int (input("b = "))
+c = int (input("c = "))
 
 tmp = c
 c = b
 b = a
 a = tmp
 
-print(“a =”, a)
-print(“b =”, b)
-print(“c =”, c)
+print("a =", a)
+print("b =", b)
+print("c =", c)
 
 
