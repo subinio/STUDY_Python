@@ -89,3 +89,35 @@ else:
   print("NO")
 
 
+
+
+
+## Let's call an integer a palindrome if it remains the same after reading its digits from right to left. Given a four-digit integer, print "YES" if it's a palindrome and print "NO" otherwise. 
+
+## 입력이 4자리 수라고 아예 조건에 명시되어 있으므로 해당 방법으로 회문 검사
+## 그러나 원래는 반복문을 통한 회문검사
+
+a = int(input())
+
+ths = a//1000
+a = a%1000
+
+hud = a//100
+a = a%100
+
+ten = a//10
+a = a%10
+
+one = a//1
+
+if ths==one and hud==ten:
+  print("YES")
+
+else:
+  print("NO")
+
+
+
+
+
+## 
