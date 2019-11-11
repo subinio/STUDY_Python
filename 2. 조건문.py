@@ -66,4 +66,26 @@ if (a>0 and b<0) or (a<0 and b>0):
 else:
   print("NO")
 
+
+
+
+
+## Given a three-digit integer X consisting of three different digits, print "YES" if its three digits are going in an ascending order from left to right and print "NO" otherwise.
+
+a =int(input())
+
+hud = a//100 #백의자리
+a = a%100
+
+ten = a//10  #십의자리
+a = a%10
+
+one = a//1   #일의자리
+
+if hud<ten and ten<one:
+  print("YES")
   
+else:
+  print("NO")
+
+
