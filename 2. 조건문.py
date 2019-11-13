@@ -145,4 +145,28 @@ elif c<a:
     print(b)
 
 
+
+
+
+## Given a month - an integer from 1 to 12, print the number of days in it in the year 2017.
+
+a = int(input())
+
+if a==2:
+  print(28)
+  
+elif a<8:
+  if a%2:
+    print(31)
+  else:
+    print(30)
+    
+else:
+  if a%2:
+    print(30)
+  else:
+    print(31)
+
+
+
   
