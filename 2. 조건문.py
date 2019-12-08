@@ -237,4 +237,79 @@ else:
 
 
 
-## 14
+## Given a month (an integer from 1 to 12) and a day in it (an integer from 1 to 31) in the year 2017, print the month and the day of the next day to it.
+
+month = int(input())
+day = int(input())
+
+if month==12:
+  if day==31:
+    month=1
+    day=1
+  else:
+    day+=1
+
+elif month==2:
+  if day==28:
+    month+=1
+    day=1
+  else:
+    day+=1
+
+elif month<8:
+  if month%2:
+    if day==31:
+      month+=1
+      day=1
+    else:
+      day+=1
+  else:
+    if day==30:
+      month+=1
+      day=1
+    else:
+      day+=1
+
+else: 
+  if month%2:
+    if day==30:
+      month+=1
+      day=1
+    else:
+      day+=1
+  else:
+    if day==31:
+      month+=1
+      day=1
+    else:
+      day+=1
+  
+
+print(month)
+print(day)
+
+
+
+
+
+## Write a program that solves a linear equation ax = b in integers.
+## Given two integers a and b (a may be zero), print a single integer root if it exists and print "no solution" or "many solutions" otherwise.
+
+a=int(input())
+b=int(input())
+
+if a==0 and b==0:
+  print("many solutions")
+
+elif a==0:
+  print("no solution")
+  
+elif b==0:
+  print(0)
+  
+else:
+  if b/a==int(b/a):
+    print(int(b/a))
+  else:
+    print("no solution")
+
