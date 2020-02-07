@@ -313,3 +313,168 @@ else:
   else:
     print("no solution")
 
+
+
+
+
+# Given integer coordinates of three vertices of a rectangle whose sides are parallel to coordinate axes, find the coordinates of the fourth vertex of the rectangle.
+
+ax = int(input())
+ay = int(input())
+bx = int(input())
+by = int(input())
+cx = int(input())
+cy = int(input())
+
+if ax == bx:
+  dx = cx
+elif bx == cx:
+  dx = ax
+else:
+  dx = bx
+
+if ay == by:
+  dy = cy
+elif by == cy:
+  dy = ay
+else:
+  dy = by
+  
+print(dx)
+print(dy)
+
+
+
+
+
+# Given three integers, print them in ascending order.
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a>b :
+  tmp=a
+  a=b
+  b=tmp
+  
+if a>c:
+  tmp=a
+  a=c
+  c=tmp
+  
+if b>c:
+  tmp=b
+  b=c
+  c=tmp
+  
+print(a)
+print(b)
+print(c)
+  
+  
+  
+
+
+# 변수 a,b에 정수 값을 입력 받고, 최대값을 구하는 프로그램을 작성하라.
+
+a = int(input())
+b = int(input())
+
+max = a
+if b> max:
+    max=b
+print(max)
+
+
+
+
+
+# 변수 a,b에 정수 값을 입력 받고, 최소값을 구하는 프로그램을 작성하라.
+
+a = int(input())
+b = int(input())
+
+min = a
+if b< min:
+    min=b
+print(min)
+
+
+
+
+
+# 변수 a,b,c에 정수 값을 입력 받고, 최대값을 구하는 프로그램을 작성하라.
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+max = a
+if b>max:
+    max=b
+
+if c>max:
+    max=c
+
+print(min)
+
+
+
+
+
+# 변수 a와 b에 정수 값을 입력 받고, a가 b보다 크면 교환한다. 최종결과 a,b를 출력하여라.
+
+a = int(input())
+b = int(input())
+
+if a>b:
+        tmp=a
+        a=b
+        b=tmp
+
+print(a,b)
+
+
+
+
+
+# 변수 a와 b에 정수 값을 입력 받고, 크기순으로 출력하여라.
+
+a = int(input())
+b = int(input())
+
+if a>=b:
+	print(a, b)
+else:
+	print(b,a)
+
+
+
+
+
+# 화물량이 2 이하인 경우 값을 1증가시켜주고, 그 외의 값은 1 감소하는 프로그램을 작성하라.
+a =int (input())
+
+if a <= 2:
+        a = a + 1
+else :
+        a = a- 1
+        
+print(a)
+
+
+
+
+
+# 출발 화물량을 입력받고 2 이하면 울산역에 경유하고 출발 화물량 값을 1 만큼 증가시키는 프로그램을 작성하라.
+a =int (input())
+
+print("서울역 출발")
+
+if a <= 2 :
+        print("울산역 도착")
+        a = a + 1
+
+print("부산역 도착")
+print("도착 화물량 =",a)
